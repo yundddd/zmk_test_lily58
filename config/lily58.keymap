@@ -28,7 +28,7 @@
 
 
                         //&kp LALT &kp DEL &kp RET  &mo 1  &mo 2  &kp SPACE  &kp BSPC &kp RALT
-						&kp LALT &kp DEL &mo 1 &kp RET  &kp SPACE &mo 2  &kp BSPC &kp RALT 
+						&kp LALT  &mo 1 &kp DEL  &kp RET  &kp SPACE &kp BSPC &mo 2 &kp RALT 
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;

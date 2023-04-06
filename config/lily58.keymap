@@ -15,12 +15,12 @@
         combo_RPAR {
             timeout-ms = <50>;
             key-positions = <19 20>;
-            bindings = &kp RPAR;
+            bindings = <&kp RPAR>;
         };
 		combo_LPAR {
             timeout-ms = <50>;
             key-positions = <15 16>;
-            bindings = &kp LPAR;
+            bindings = <&kp LPAR>;
         };	
 	};
 };

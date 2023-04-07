@@ -13,32 +13,32 @@
 	combos {
         compatible = "zmk,combos";
         combo_LPAR {
-            timeout-ms = <50>;
+            timeout-ms = <30>;
             key-positions = <19 20>;
             bindings = <&kp LPAR>;
         };
 		combo_RPAR {
-            timeout-ms = <50>;
+            timeout-ms = <30>;
             key-positions = <20 21>;
             bindings = <&kp RPAR>;
         };
 		combo_LBKT {
-            timeout-ms = <50>;
+            timeout-ms = <30>;
             key-positions = <31 32>;
             bindings = <&kp LBKT>;
         };
 		combo_RBKT {
-            timeout-ms = <50>;
+            timeout-ms = <30>;
             key-positions = <32 33>;
             bindings = <&kp RBKT>;
         };
 		combo_LBRC {
-            timeout-ms = <50>;
+            timeout-ms = <30>;
             key-positions = <45 46>;
             bindings = <&kp LBRC>;
         };
 		combo_RBRC {
-            timeout-ms = <50>;
+            timeout-ms = <30>;
             key-positions = <46 47>;
             bindings = <&kp RBRC>;
         };
@@ -48,15 +48,14 @@
 
 / {
     behaviors {
-        lh_pht: left_hand_positional_hold_tap {
+        hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
-            label = "LEFT_POSITIONAL_HOLD_TAP";
+            label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
-            tapping-term-ms = <100>;                        // <---[[produces tap if held longer than tapping-term-ms]]
-            quick-tap-ms = <200>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
-            hold-trigger-key-positions = <5 6 7 8 9 10>;    // <---[[right-hand keys]]
         };
     };
 
@@ -64,8 +63,7 @@
         compatible = "zmk,keymap";
         default_layer {
             bindings = <
-                // position 0     pos 1             pos 2             pos 3             pos 4    pos 5    pos 6    pos 7    pos 8    pos 9    pos 10
-                &lh_pht LCTL A    &lh_pht LSFT S    &lh_pht LALT D    &lh_pht LCTL F    &kp G    &kp H    &kp I    &kp J    &kp K    &kp L    &kp SEMI
+                &hm LCTRL A &hm LGUI S &hm LALT D &hm LSHIFT F
             >;
         };
     };

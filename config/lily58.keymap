@@ -13,32 +13,32 @@
 	combos {
         compatible = "zmk,combos";
         combo_LPAR {
-            timeout-ms = <30>;
+            timeout-ms = <10>;
             key-positions = <19 20>;
             bindings = <&kp LPAR>;
         };
 		combo_RPAR {
-            timeout-ms = <30>;
+            timeout-ms = <10>;
             key-positions = <20 21>;
             bindings = <&kp RPAR>;
         };
 		combo_LBKT {
-            timeout-ms = <30>;
+            timeout-ms = <10>;
             key-positions = <31 32>;
             bindings = <&kp LBKT>;
         };
 		combo_RBKT {
-            timeout-ms = <30>;
+            timeout-ms = <10>;
             key-positions = <32 33>;
             bindings = <&kp RBKT>;
         };
 		combo_LBRC {
-            timeout-ms = <30>;
+            timeout-ms = <10>;
             key-positions = <45 46>;
             bindings = <&kp LBRC>;
         };
 		combo_RBRC {
-            timeout-ms = <30>;
+            timeout-ms = <10>;
             key-positions = <46 47>;
             bindings = <&kp RBRC>;
         };

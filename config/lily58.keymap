@@ -120,7 +120,7 @@
                                &kp LALT  &al 1 INS  &kp DEL  &kp SPACE   &kp RET  &kp BSPC  &al 2 RALT  &kp RALT
             >;
 
-            sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp UP DOWN>;
+            sensor-bindings = <&inc_dec_kp LEFT RIGHT>, <&inc_dec_kp UP DOWN>;
         };
 
         lower_layer {
@@ -139,7 +139,8 @@
                                                  &trans             &trans        &trans        &trans        &trans  &trans     &trans     &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp UP DOWN>;
+            sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
+            sensor-bindings = <&inc_dec_kp UP DOWN>;
         };
 
         raise_layer {
@@ -158,7 +159,7 @@
                            &kp LALT  &kp DEL  &kp RET  &trans    &trans  &kp SPACE    &kp BSPC   &kp RALT
             >;
 
-            sensor-bindings = <&inc_dec_kp LEFT RIGHT &inc_dec_kp UP DOWN>;
+            sensor-bindings = <&inc_dec_kp LEFT RIGHT>, <&inc_dec_kp UP DOWN>;
         };
     };
 };

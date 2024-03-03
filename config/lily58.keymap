@@ -120,6 +120,9 @@
                                &kp LALT  &kp LEFT_COMMAND  &al 1 BACKSPACE  &kp SPACE    &kp RET   &al 2 DELETE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
             >;
 
+            sensor-bindings =
+                <&inc_dec_kp RIGHT LEFT>,
+                <&inc_dec_kp DOWN UP_ARROW>;
         };
 
         lower_layer {
@@ -137,7 +140,6 @@
 &trans      &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG  &out OUT_USB  &out OUT_BLE  &shift_ins    &trans  &trans     &kp MINUS  &kp KP_PLUS      &kp LBRC  &kp RBRC  &kp PIPE
                                                  &trans             &trans        &trans        &trans        &trans  &trans     &trans     &trans
             >;
-
         };
 
         raise_layer {
@@ -155,7 +157,6 @@
 &kp LSHFT  &kp F8  &kp F9  &kp F10   &kp F11  &kp F12  &trans    &trans  &kp KP_PLUS  &kp MINUS  &kp EQUAL  &kp LBKT   &kp BSLH   &kp LSHFT
                            &kp LALT  &kp DEL  &kp RET  &trans    &trans  &kp SPACE    &kp BSPC   &kp RALT
             >;
-
         };
     };
 };

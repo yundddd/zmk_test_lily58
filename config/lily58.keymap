@@ -120,7 +120,10 @@
                                &kp LALT  &kp LEFT_COMMAND  &al 1 BACKSPACE  &kp SPACE    &kp RET   &al 2 DELETE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
             >;
 
-            sensor-bindings = <&inc_dec_kp RIGHT LEFT>;
+            sensor-bindings =
+                <&inc_dec_kp RIGHT LEFT>,
+                <&inc_dec_kp DOWN UP_ARROW>;
+
             sensor-bindings = <&inc_dec_kp UP DOWN>;
         };
 
